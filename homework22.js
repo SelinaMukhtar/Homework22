@@ -1,6 +1,10 @@
 //1
-let number = prompt("Enter a number");
-if (number>10) {
+let input = prompt("Enter a number");
+let number = Number(input);
+
+if (isNaN(number)) {
+    console.log("Вы ввели не число");
+} else if (number > 10) {
     console.log("Число больше 10");
 } else {
     console.log("Число меньше или равно 10");
